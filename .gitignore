@@ -1,0 +1,36 @@
+# Maven
+target/
+*.jar
+*.war
+*.ear
+.m2/
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+.DS_Store
+.vscode/
+*.swp
+*.swo
+*~
+
+# Gradle
+.gradle/
+build/
+
+# Compiled classes
+*.class
+*.pyc
+
+# Logs
+*.log
+
+# Local environment files
+.env
+.env.local
+
+# Database
+*.db
+*.sqlite

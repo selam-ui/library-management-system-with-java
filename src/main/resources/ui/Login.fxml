@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.librarymanagementsystem.controller.LoginController"
+            style="-fx-background-color: #f5f5f5;">
+    <center>
+        <VBox alignment="CENTER" spacing="20" style="-fx-background-color: white;" maxWidth="400" maxHeight="500">
+            <padding>
+                <Insets top="40" right="40" bottom="40" left="40"/>
+            </padding>
+
+            <!-- Title -->
+            <Label text="Library Management System" textAlignment="CENTER" style="-fx-font-size: 24; -fx-font-weight: bold; -fx-text-fill: #0078d4;">
+                <VBox.margin>
+                    <Insets bottom="30"/>
+                </VBox.margin>
+            </Label>
+
+            <!-- Username Field -->
+            <VBox spacing="5">
+                <Label text="Username" style="-fx-font-size: 12; -fx-font-weight: bold;"/>
+                <TextField fx:id="usernameField" promptText="Enter username" style="-fx-padding: 10; -fx-font-size: 12;"/>
+            </VBox>
+
+            <!-- Password Field -->
+            <VBox spacing="5">
+                <Label text="Password" style="-fx-font-size: 12; -fx-font-weight: bold;"/>
+                <PasswordField fx:id="passwordField" promptText="Enter password" style="-fx-padding: 10; -fx-font-size: 12;"/>
+            </VBox>
+
+            <!-- Error Label -->
+            <Label fx:id="errorLabel" style="-fx-text-fill: #e81123; -fx-font-size: 12;"/>
+
+            <!-- Login Button -->
+            <Button fx:id="loginButton" text="Login" style="-fx-padding: 12; -fx-font-size: 14; -fx-font-weight: bold;" onAction="#handleLogin">
+                <VBox.margin>
+                    <Insets top="10"/>
+                </VBox.margin>
+            </Button>
+
+            <!-- Register Link -->
+            <Button fx:id="registerButton" text="New User? Register here" style="-fx-background-color: transparent; -fx-text-fill: #0078d4; -fx-font-size: 12;" onAction="#handleRegister"/>
+        </VBox>
+    </center>
+</BorderPane>

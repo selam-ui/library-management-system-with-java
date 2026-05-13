@@ -1,0 +1,76 @@
+/* Root styles */
+.root {
+    -fx-font-family: "Segoe UI", "Arial";
+    -fx-font-size: 12;
+    -fx-base: #f0f0f0;
+    -fx-control-inner-background: #ffffff;
+}
+
+/* Button styles */
+.button {
+    -fx-padding: 10px 20px;
+    -fx-font-size: 14;
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #0078d4;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #005a9e;
+}
+
+.button:pressed {
+    -fx-background-color: #004578;
+}
+
+/* TextField styles */
+.text-field {
+    -fx-padding: 8px 12px;
+    -fx-font-size: 12;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1;
+    -fx-border-radius: 3;
+    -fx-background-color: #ffffff;
+}
+
+.text-field:focused {
+    -fx-border-color: #0078d4;
+    -fx-border-width: 2;
+}
+
+/* Label styles */
+.label {
+    -fx-font-size: 12;
+    -fx-text-fill: #333333;
+}
+
+.label.error {
+    -fx-text-fill: #e81123;
+    -fx-font-size: 12;
+}
+
+.label.success {
+    -fx-text-fill: #107c10;
+    -fx-font-size: 12;
+}
+
+/* TableView styles */
+.table-view {
+    -fx-font-size: 12;
+    -fx-border-color: #cccccc;
+}
+
+.table-view .column-header {
+    -fx-background-color: #0078d4;
+    -fx-text-fill: #ffffff;
+    -fx-padding: 8px;
+}
+
+/* ComboBox styles */
+.combo-box {
+    -fx-padding: 8px;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1;
+}
